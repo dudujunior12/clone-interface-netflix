@@ -1,0 +1,241 @@
+:root{
+	--azul: #4169e1;
+	--preta: #141414;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: var(--preta);
+	font-family: 'Arial', Times; 
+	color: white;
+}
+
+/*Header*/
+
+header{
+	position: absolute;
+	width: 100%;
+	outline: none;
+}
+
+header .container{
+	display: flex;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+header .logo{
+	color: var(--azul);
+	font-size: 25px;
+	display: flex;
+}
+
+header nav{
+	font-size: 15px;
+	width: 100%;
+	display: flex;
+	margin-top: 5px;
+}
+
+header nav a{
+	text-decoration: none;
+	color: #ffffff;
+	margin-right: 10px;
+}
+
+header nav a:hover{
+	color: #A9A9A9;
+}
+
+.main-nav{
+	display: flex;
+	margin-left: 30px;
+}
+
+.main-nav a{
+	margin-right: 25px;
+}
+
+/*botoes*/
+.secondary-nav{
+	width: 500px; /*Se der merda remova */
+	margin-left: auto;
+}
+
+.container #input{ /*Se der merda remova */
+	border: 0;
+	outline: none;
+}
+
+.secondary-nav .nav-elements{
+	height: 30px;
+	margin-right: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.secondary-nav .nav-elements .search-button{
+	margin-left: auto;
+}
+
+
+.secondary-nav .nav-elements .search-box{ 
+	margin-left: auto;
+	display: none;
+	position: relative;
+	margin-right: 40px;
+	height: 100%;
+	width: 200px;
+}
+
+.secondary-nav .nav-elements .search-box #input{ 
+	background-color: black;
+	color: #A9A9A9;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px 40px;
+	border-radius: 3px;
+	font-size: 16px;
+}
+
+.secondary-nav .nav-elements .search-box .search-tab{ 
+	position: absolute;
+	top: 0;
+	width: 30px;
+	height: 100%;
+	cursor: pointer;
+
+}
+
+.secondary-nav .nav-elements .search-box .search-tab .fas{
+	position: absolute;
+	margin-top: 9px;
+	margin-left: 5px;
+}
+
+.botao-icons{
+	cursor: pointer;
+	border: none;
+	background: 0 0;
+	color: white;
+	margin-right: 40px;
+	outline: none;
+}
+
+/*Filme Principal*/
+.filme-principal{
+	font-size: 20px;
+	background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../img/min-principal.jpg');
+	height: 800px;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.container{
+	margin-left: 60px;
+}
+
+.filme-principal .container{
+	width: 60%;
+	margin-bottom: 30px;
+}
+
+.filme-principal .titulo{
+	margin-top: 15%;
+	font-size: 40px;
+}
+
+.filme-principal .descricao{
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.botao{
+	border: none;
+	padding: 15px 30px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: .3s ease all;
+}
+
+.um{
+	background-color: rgb(255,255,255);
+	color: black;
+	font-size: 16px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.um:hover{
+	background-color: rgba(255,255,255,.70)
+}
+
+.dois{
+	background-color: rgba(128,128,128,.70);
+	color: white;
+	font-size: 16px;
+}
+
+.dois:hover{
+	background-color: rgba(128,128,128,.30)
+}
+
+.botao i{
+	margin-right: 5px;
+}
+
+/*carrosel*/
+
+.container-carrosel{
+	margin-bottom: 30px;
+}
+
+.box-filme{
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+.carrosel-filmes{
+	margin-top: 30px;
+	margin-left: 60px;
+}
+
+.carrosel-filmes p{ 
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.carrosel-series{
+	margin-top: 30px;
+	margin-left: 60px;
+}
+
+.carrosel-series p{ 
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.owl-carousel img{
+	height: 300px;
+}
+
+.owl-nav{
+	display: none;
+}
+
+.owl-dots{
+	display: none;
+}
